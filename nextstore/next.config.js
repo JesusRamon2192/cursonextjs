@@ -1,20 +1,8 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-  env: {
-    customKey: 'customValue',
-  },
-  basePath: '/dist',
-  compress: true,
-  async redirects(){
-    return [
-      {
-        source: '/',
-        destination: '/',
-        permanent: true,
-      }
-    ]
-  }
 }
+
+module.exports = nextConfig
 
 
