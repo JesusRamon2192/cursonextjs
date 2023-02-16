@@ -1,4 +1,3 @@
-import '@styles/globals.css';
 import AppContext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState';
 
