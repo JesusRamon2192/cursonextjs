@@ -1,4 +1,6 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import OrderItem from '@components/OrderItem';
 import AppContext from '../context/AppContext';
 import arrow from '@icons/flechita.svg';
@@ -17,7 +19,7 @@ const MyOrder = () => {
 		<aside className={styles.MyOrder}>
 			<div className="MyOrder-container">
 				<div className="title-container">
-					<img className="more-clickable-area pointer" src={arrow} alt="arrow" onClick={() => toggleOrder()} />
+					<Image width={15} height={15} className="more-clickable-area pointer" src={arrow} alt="arrow" onClick={() => toggleOrder()} />
 					<p className="title">My order</p>
 				</div>
 				<div className="my-order-content">
@@ -32,9 +34,9 @@ const MyOrder = () => {
 						</p>
 						<p>${sumTotal()}</p>
 					</div>
-					<button className="primary-button">
+					<Link className="primary-button" href="/checkout">
 						Checkout
-					</button>
+					</Link>
 				</div>
 			</div>
 		</aside>

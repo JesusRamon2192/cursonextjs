@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
@@ -15,10 +16,12 @@ const Header = () => {
 		<>
 			<nav className={styles.Header}>
 				<div  className={styles.iconContainer}>
-				<Image src={menu} alt="menu" className={styles.menu} width={30} height={30}/>
+					<Image src={menu} alt="menu" className={styles.menu} width={30} height={30}/>
 				</div>
 				<div className={styles['navbar-left']}>
-					<Image src={logo} alt="logo" className={styles['nav-logo']} />
+					<Link href="/">
+						<Image src={logo} alt="logo" className={styles['nav-logo']} />
+					</Link>
 					<ul>
 						<li>
 							<a href="/">All</a>
