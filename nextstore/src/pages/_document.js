@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -6,19 +6,21 @@ export default function Document() {
       <Head>
         <title>React Shop</title>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NVJBPKELB9"></script>
-        <script dangerouslySetInnerHTML={{
-          __html:`
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-NVJBPKELB9');
-            `
-        }}></script>
+            `,
+          }}
+        ></script>
       </Head>
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
