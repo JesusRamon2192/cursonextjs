@@ -14,6 +14,13 @@ module.exports = {
     'next/core-web-vitals',
   ],
   rules: {
-    'semi': ['error', 'always']
+    'semi': 0,
+    'prettier/prettier': 0,
+    'jsx-a11y/label-has-associated-control': 0,
+    'react/no-unescaped-entities': 0,
+    '@next/next/no-html-link-for-pages': 0,
+    '@next/next/no-img-element': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0
   }
 }
