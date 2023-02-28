@@ -8,13 +8,11 @@
   position: fixed;
   top: 0;
   background: white;
-  width: calc(100% - 50px);
+  width: calc(100% - 0px);
+  z-index: 1;
 }
 .menu {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-
+  display: none;
 }
 .iconContainer {
   height: 30px;
@@ -43,6 +41,10 @@
 .navbar-left ul {
   margin-left: 12px;
 }
+.navbar-right li:first-of-type{
+  margin: 0 1em 0 0;
+}
+
 .navbar-left ul li a,
 .navbar-right ul li a {
   text-decoration: none;
